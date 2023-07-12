@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Dashboard, Folder, Task, CalendarMonth } from "@styled-icons/material";
-import { Calendar } from "@styled-icons/feather";
 import SearchBox from "./searchBox";
 import ProfileSvg from "./ProfileSvg";
 import Logo from "./Logo";
 import MenuSVG from "./menuSVG";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
@@ -17,22 +17,22 @@ const Navbar = () => {
 
           {/* Links with Icons */}
           <div className="hidden md:flex  items-center space-x-8 ml-4 lg:ml-16">
-            <a href="/" className="flex items-center space-x-2 ">
+            <Link to="/" className="flex items-center space-x-2 ">
               <Dashboard size={18} color="gray" />
-              <span>Home</span>
-            </a>
-            <a href="/" className="flex items-center space-x-2">
+              <span>Dashboard</span>
+            </Link>
+            <Link to="/projects" className="flex items-center space-x-2">
               <Folder size={18} color="gray" />
               <span>Projects</span>
-            </a>
-            <a href="/" className="flex items-center space-x-2">
+            </Link>
+            <Link to="/calendar" className="flex items-center space-x-2">
               <CalendarMonth size={18} color="gray" />
               <span>Calendar</span>
-            </a>
-            <a href="/" className="flex items-center space-x-2">
+            </Link>
+            <Link to="/Tasks" className="flex items-center space-x-2">
               <Task size={18} color="gray" />
-              <span>Task</span>
-            </a>
+              <span>Tasks</span>
+            </Link>
 
             {/* Add more links with icons here */}
           </div>
