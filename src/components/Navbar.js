@@ -57,27 +57,55 @@ const Navbar = () => {
       {openMenu && (
         <div className="px-8 bg-green-100 py-3">
           <div>
-            <a href="/" className="flex items-center space-x-2 space-y-1">
+            <Link to="/" className="flex items-center space-x-2 space-y-1 ">
               <Dashboard size={18} color="gray" />
-              <span>Home</span>
-            </a>
-            <a href="/" className="flex items-center space-x-2 space-y-1">
+              <span>Dashboard</span>
+            </Link>
+            <Link
+              to="/projects"
+              className="flex items-center space-x-2 space-y-1"
+            >
               <Folder size={18} color="gray" />
               <span>Projects</span>
-            </a>
-            <a href="/" className="flex items-center space-x-2 space-y-1">
+            </Link>
+            <Link
+              to="/calendar"
+              className="flex items-center space-x-2 space-y-1"
+            >
               <CalendarMonth size={18} color="gray" />
               <span>Calendar</span>
-            </a>
-            <a href="/" className="flex items-center space-x-2 space-y-1">
+            </Link>
+            <Link to="/Tasks" className="flex items-center space-x-2 space-y-1">
               <Task size={18} color="gray" />
-              <span>Task</span>
-            </a>
+              <span>Tasks</span>
+            </Link>
           </div>
           <SearchBox className="mt-4" />
-
           {/* Add more links with icons here */}
         </div>
+        // <div className="px-8 bg-green-100 py-3">
+        //   <div>
+        //     <a href="/" className="flex items-center space-x-2 space-y-1">
+        //       <Dashboard size={18} color="gray" />
+        //       <span>Home</span>
+        //     </a>
+        //     <a href="/" className="flex items-center space-x-2 space-y-1">
+        //       <Folder size={18} color="gray" />
+        //       <span>Projects</span>
+        //     </a>
+        //     <a href="/" className="flex items-center space-x-2 space-y-1">
+        //       <CalendarMonth size={18} color="gray" />
+        //       <span>Calendar</span>
+        //     </a>
+        //     <a href="/" className="flex items-center space-x-2 space-y-1">
+        //       <Task size={18} color="gray" />
+        //       <span>Task</span>
+        //     </a>
+        //   </div>
+        //   <SearchBox className="mt-4" />
+
+        //   {/* Add more links with icons here */}
+        // </div>
       )}
     </>
   );
