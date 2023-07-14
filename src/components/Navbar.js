@@ -52,7 +52,11 @@ const Navbar = () => {
             <SearchBox />
           </div>
           {/* using multi language */}
-          <select defaultValue={i18n.language} onChange={onChangeLang}>
+          <select
+            defaultValue={i18n.language}
+            onChange={onChangeLang}
+            className="mx-2"
+          >
             {LANGUAGES.map(({ code, label }) => (
               <option key={code} value={code}>
                 {label}
