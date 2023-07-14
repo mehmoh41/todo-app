@@ -73,7 +73,7 @@ export default function Todo() {
             />
             <rect x="15" y="12" width="3" height="3" rx="0.5" fill="#000000" />
           </svg>
-          <span className="ml-2 mt-1">14-07-2023</span>
+          <span className="text-sm ml-2 mt-1">14-07-2023</span>
         </div>
       </footer>
     </div>
