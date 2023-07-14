@@ -17,7 +17,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <nav className="flex items-center bg-green-100  px-8 py-3 justify-between tracking-widest ">
+      <nav className="flex items-center bg-green-100  md:px-8 px-4 py-3 justify-between tracking-widest ">
         {/* Logo and Links in one div */}
         <div className="flex items-center">
           {/* Logo */}
@@ -71,7 +71,7 @@ const Navbar = () => {
 
       {/* links while toggling */}
       {openMenu && (
-        <div className="px-8 bg-green-100 py-3">
+        <div className="px-4 bg-green-100 py-3">
           <div>
             <Link to="/" className="flex items-center space-x-2 space-y-1 ">
               <Dashboard size={18} color="gray" />
