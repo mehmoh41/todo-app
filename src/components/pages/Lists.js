@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
+import Todo from "../homepage/todo";
+import InProgress from "../homepage/inProgress";
+import Done from "../homepage/done";
 
 export default function Lists() {
   const [listActive, setListActive] = useState(false);
@@ -179,15 +182,60 @@ export default function Lists() {
               </svg>
             </div>
           </header>
-          <section className="grid grid-cols-12">
-            <div className={`${gridActive ? "col-span-4" : "col-span-12"}`}>
-              {t("todo")}
+          <section className="grid gap-8 grid-cols-12 my-4 items-start">
+            <div
+              className={`${
+                gridActive ? "col-span-6 lg:col-span-4" : "col-span-12"
+              } bg-red-200 shadow-md p-3`}
+            >
+              <div className="flex items-center justify-between ">
+                <div className="flex gap-2 items-center">
+                  <h4 className="text-md capitalize relative">{t("todo")}</h4>
+                  <span className="inline-block w-6 h-6 bg-gray-200 px-[7px] rounded-md font-extrabold">
+                    2
+                  </span>
+                </div>
+
+                <span className="">...</span>
+              </div>
+              <Todo />
+              <Todo />
             </div>
-            <div className={`${gridActive ? "col-span-4" : "col-span-12"}`}>
-              {t("inProgress")}
+            <div
+              className={`${
+                gridActive ? "col-span-6 lg:col-span-4" : "col-span-12"
+              } bg-blue-200 shadow-md p-3 grid`}
+            >
+              <div className="flex items-center justify-between">
+                <div className="flex gap-2 items-center">
+                  <h4 className="text-md capitalize relative">
+                    {t("inProgress")}
+                  </h4>
+                  <span className="inline-block w-6 h-6 bg-gray-200 px-[7px] rounded-md font-extrabold">
+                    2
+                  </span>
+                </div>
+                <span className="">...</span>
+              </div>
+              <InProgress />
             </div>
-            <div className={`${gridActive ? "col-span-4" : "col-span-12"}`}>
-              {t("done")}
+            <div
+              className={`${
+                gridActive ? "col-span-6 lg:col-span-4" : "col-span-12"
+              } bg-green-200 shadow-md p-3 grid`}
+            >
+              <div className=" flex items-center justify-between">
+                <div className="flex gap-2 items-center">
+                  <h4 className="text-md capitalize relative">{t("done")}</h4>
+                  <span className="inline-block w-6 h-6 bg-gray-200 px-[7px] rounded-md font-extrabold">
+                    2
+                  </span>
+                </div>
+                <span className="">...</span>
+              </div>
+
+              <Done />
+              <Done />
             </div>
           </section>
         </section>
