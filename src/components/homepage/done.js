@@ -73,7 +73,7 @@ export default function Done() {
             />
             <rect x="15" y="12" width="3" height="3" rx="0.5" fill="#000000" />
           </svg>
-          <span className="text-sm ml-2 mt-1">14-07-2023</span>
+          <span className="text-[12px] md:text-md ml-2 mt-1">14-07-2023</span>
         </div>
       </footer>
     </div>
