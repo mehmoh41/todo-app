@@ -57,7 +57,7 @@ export default function Lists() {
               <svg
                 width="32px"
                 height="32px"
-                className={`ml-24 mr-2 ${
+                className={`ml-1 lg:ml-20 ${
                   gridActive ? "bg-indigo-600 rounded-lg p-1" : ""
                 }`}
                 viewBox="0 0 24 24"
