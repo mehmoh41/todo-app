@@ -4,7 +4,14 @@ export default function Todo() {
   return (
     <div className="bg-white p-3 border border-gray-100 my-2">
       <div className="flex items-center justify-between border-b border-gray-200">
-        <div className="py-2">
+        <div className="py-2 w-full">
+          <div className="flex items-center justify-end mb-2">
+            {/* <div className="some class">a</div> */}
+
+            <span className="text-md ml-2 -mr-4 mt-1 mb-1 tracking-wider bg-red-400 px-1 text-white">
+              14-07-2023
+            </span>
+          </div>
           <h2 className="text-md capitalize">todo title</h2>
           <span className="inline-block my-2 text-sm bg-red-200 rounded-xl px-2 py-1 capitalize">
             category todo
@@ -47,33 +54,6 @@ export default function Todo() {
             </g>
           </svg>
           <span className="text-sm text-gray-500 ml-2 mt-1 font-thin">4/5</span>
-        </div>
-        <div className="flex items-center">
-          <svg
-            width="15px"
-            height="15px"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M20 10V7C20 5.89543 19.1046 5 18 5H6C4.89543 5 4 5.89543 4 7V10M20 10V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V10M20 10H4M8 3V7M16 3V7"
-              stroke="#000000"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-            <rect x="6" y="12" width="3" height="3" rx="0.5" fill="#000000" />
-            <rect
-              x="10.5"
-              y="12"
-              width="3"
-              height="3"
-              rx="0.5"
-              fill="#000000"
-            />
-            <rect x="15" y="12" width="3" height="3" rx="0.5" fill="#000000" />
-          </svg>
-          <span className="text-[12px] md:text-md ml-2 mt-1">14-07-2023</span>
         </div>
       </footer>
     </div>

@@ -4,7 +4,14 @@ export default function InProgress() {
   return (
     <div className="bg-white p-3 border border-gray-100 my-2">
       <div className="flex items-center justify-between border-b border-gray-200">
-        <div className="py-2">
+        <div className="py-2 w-full">
+          <div className="flex items-center justify-end mb-2">
+            {/* <div className="some class">a</div> */}
+
+            <span className="text-md ml-2 -mr-4 mt-1 mb-1 tracking-wider bg-blue-400 px-1 text-white">
+              14-07-2023
+            </span>
+          </div>
           <h2 className="text-md capitalize">todo title</h2>
           <span className="inline-block my-2 text-sm bg-red-200 rounded-xl px-2 py-1 capitalize">
             category todo
